@@ -3,7 +3,7 @@ package com.cebancoin.chain;
 import java.util.Date;
 
 import com.cebancoin.crypto.DigitalSignature;
-
+ 
 public class Block {
 	
 	//block signature

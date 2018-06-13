@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.cebancoin.chain.Block;
 import com.google.gson.GsonBuilder;
-
+ 
 public class CebanCoin {
 	// block chain list
 	public static ArrayList<Block> blockchain = new ArrayList<Block>();
