@@ -3,7 +3,7 @@ package com.cebancoin.crypto;
 import java.security.MessageDigest;
  
 public class DigitalSignature {
-
+ 
 	public static String encyriptSha256(String text) {
 		try {
 			MessageDigest digest = MessageDigest.getInstance("SHA-256");

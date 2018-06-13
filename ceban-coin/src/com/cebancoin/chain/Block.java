@@ -5,7 +5,7 @@ import java.util.Date;
 import com.cebancoin.crypto.DigitalSignature;
  
 public class Block {
-	
+	 
 	//block signature
 	public String hash;
 	//previous block signature
