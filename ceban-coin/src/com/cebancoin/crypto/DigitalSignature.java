@@ -3,7 +3,7 @@ package com.cebancoin.crypto;
 import java.security.MessageDigest;
  
 public class DigitalSignature {
- 
+  
 	public static String encyriptSha256(String text) {
 		try {
 			MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -12,7 +12,7 @@ public class DigitalSignature {
 			for (int i = 0; i < hash.length; i++) {
 				String hex = Integer.toHexString(0xff & hash[i]);
 				if (hex.length() == 1)
-					hexString.append('0');
+					hexString.append('0'); 
 				hexString.append(hex);
 			}
 			return hexString.toString();

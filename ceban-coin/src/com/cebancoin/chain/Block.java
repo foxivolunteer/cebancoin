@@ -6,7 +6,7 @@ import com.cebancoin.crypto.DigitalSignature;
  
 public class Block {
 	 
-	//block signature
+	//block signature 
 	public String hash;
 	//previous block signature
 	public String previousHash;

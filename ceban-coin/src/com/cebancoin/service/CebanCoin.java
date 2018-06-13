@@ -8,7 +8,7 @@ import com.google.gson.GsonBuilder;
 public class CebanCoin {
 	// block chain list 
 	public static ArrayList<Block> blockchain = new ArrayList<Block>();
-  
+     
 	public static void main(String[] args) {
 		// add blocks to the blockchain ArrayList:
 		blockchain.add(new Block("first block", "0"));
@@ -17,5 +17,5 @@ public class CebanCoin {
 		//gson from google gson-2.6.2.jar lib.
 		String blockchainJson = new GsonBuilder().setPrettyPrinting().create().toJson(blockchain);
 		System.out.println(blockchainJson);
-	}
+	} 
 }
