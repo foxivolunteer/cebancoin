@@ -14,6 +14,7 @@ public class Block {
 	private String data;
 	//time in milliseconds
 	private long timeStamp;
+	private int nonce;
 	
 	public Block(String hash, String previousHash) {
 		super();
@@ -28,6 +29,15 @@ public class Block {
 		String calculatedhash = DigitalSignature.encyriptSha256(applyText);
 		return calculatedhash;
 	}
+	
+	public void mineBlock(int difficulty) {
+		String target = new String(new char[difficulty]).replace('\0', '0'); //Create a string with difficulty * "0" 
+		while(!hash.substring( 0, difficulty).equals(target)) {
+			setNonce(getNonce() + 1);
+			hash = calculateHash();
+		}
+		System.out.println("Block Mined!!! : " + hash);
+}
 
 	public String getData() {
 		return data;
@@ -43,5 +53,13 @@ public class Block {
 
 	public void setTimeStamp(long timeStamp) {
 		this.timeStamp = timeStamp;
+	}
+
+	public int getNonce() {
+		return nonce;
+	}
+
+	public void setNonce(int nonce) {
+		this.nonce = nonce;
 	}
 }
