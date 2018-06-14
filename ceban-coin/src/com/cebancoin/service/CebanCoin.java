@@ -126,7 +126,7 @@ public class CebanCoin {
 						for(TransactionOutput output: currentTransaction.outputs) {
 							tempUTXOs.put(output.id, output);
 						}
-						
+						 
 						if( currentTransaction.outputs.get(0).reciepient != currentTransaction.reciepient) {
 							System.out.println("#Transaction(" + t + ") output reciepient is not who it should be");
 							return false;

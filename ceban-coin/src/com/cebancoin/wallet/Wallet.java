@@ -56,7 +56,7 @@ public class Wallet {
 			return null;
 		}
 		ArrayList<TransactionInput> inputs = new ArrayList<TransactionInput>();
-		
+		 
 		float total = 0;
 		for (Map.Entry<String, TransactionOutput> item: UTXOs.entrySet()){
 			TransactionOutput UTXO = item.getValue();

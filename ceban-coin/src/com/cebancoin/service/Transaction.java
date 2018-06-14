@@ -58,7 +58,7 @@ public class Transaction {
 			for(TransactionInput i : inputs) {
 				i.UTXO = CebanCoin.UTXOs.get(i.transactionOutputId);
 			}
-
+ 
 			//check if transaction is valid:
 			if(getInputsValue() < CebanCoin.minimumTransaction) {
 				System.out.println("#Transaction Inputs to small: " + getInputsValue());

@@ -20,7 +20,7 @@ public class Block {
 	public String merkleRoot;
 	//our data will be a simple message.
 	public ArrayList<Transaction> transactions = new ArrayList<Transaction>(); 
-	
+	 
 	//Block Constructor.  
 	public Block(String previousHash ) {
 		this.previousHash = previousHash;

@@ -10,3 +10,4 @@ public class TransactionInput {
 		this.transactionOutputId = transactionOutputId;
 	}
 }
+ 
